@@ -123,9 +123,8 @@ def main():
         pdf_viewer = displayPDF(filepath)
       with col2:
         st.info('Summarization is below')
-
-         summary = llm_pipeline(filepath)
-         st.success(summary)
+        summary = llm_pipeline(filepath)
+        st.success(summary)
 
 if __name__=='__main__':
   main()
