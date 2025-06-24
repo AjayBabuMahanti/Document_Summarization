@@ -1,0 +1,11 @@
+streamlit
+transformers
+torch
+pytesseract
+pdfplumber
+python-docx
+Pillow
+keybert
+sentence-transformers
+langchain
+scikit-learn
