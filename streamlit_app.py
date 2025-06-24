@@ -1,19 +1,3 @@
-import pkg_resources
-print("🛠 Installed packages:", sorted(p.key for p in pkg_resources.working_set))
-
-try:
-    from langchain.text_splitter import RecursiveCharacterTextSplitter
-    print("✅ Import from langchain.text_splitter SUCCESS")
-except Exception as e1:
-    print("❌ Failed import from langchain.text_splitter:", e1)
-
-try:
-    from langchain_text_splitters import RecursiveCharacterTextSplitter
-    print("✅ Import from langchain_text_splitters SUCCESS")
-except Exception as e2:
-    print("❌ Failed import from langchain_text_splitters:", e2)
-
-
 # -*- coding: utf-8 -*-
 """Lamini-LM_TextSummarization.ipynb
 
