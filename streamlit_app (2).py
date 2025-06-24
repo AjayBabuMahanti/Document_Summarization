@@ -18,8 +18,6 @@ from transformers import pipeline
 import torch
 import base64 #Displaying PDFs, images, download links in Streamlit
 
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-
 """**MODEL and TOKENIZER**"""
 
 Checkpoint="MBZUAI/LaMini-Flan-T5-248M"
@@ -120,7 +118,7 @@ def main():
 
       with col1:
         st.info('Original Text')
-        #pdf_view=display_pdf(uploaded_file)
+        pdf_view=display_pdf(uploaded_file)
       with col2:
         st.info('Summarization is below')
 
