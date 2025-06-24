@@ -10,7 +10,7 @@ Original file is located at
 """
 
 import streamlit as st
-from langchain.text_splitters import RecursiveCharacterTextSplitter
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.document_loaders import PyPDFLoader,DirectoryLoader
 from langchain.chains.summarize import load_summarize_chain
 from transformers import T5Tokenizer, T5ForConditionalGeneration
@@ -115,10 +115,12 @@ def main():
   if uploaded_file is not None:
     if st.button('Summarize'):
       col1, col2 = st.columns(2)
-
+      filepath = "data/"+uploaded_file.name
+      with open(filepath, 'wb) as temp_file:
+                temp_file.write(uploaded_file.read())
       with col1:
         st.info('Original Text')
-        pdf_view=display_pdf(uploaded_file)
+        pdf_viewer = displayPDF(filepath)
       with col2:
         st.info('Summarization is below')
 
