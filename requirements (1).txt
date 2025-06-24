@@ -1,10 +1,13 @@
+streamlit
 langchain==0.0.310
 sentence_transformers
 torch
 sentencepiece
 transformers
-accelerate
-chromadb
+keybert
 pypdf
-tiktoken
-streamlit
+PyMuPDF
+python-docx
+pdf2image
+pytesseract
+pyyaml
