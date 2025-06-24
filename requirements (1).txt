@@ -1,5 +1,4 @@
-langchain
-langchain-community
+langchain==0.0.310
 sentence_transformers
 torch
 sentencepiece
