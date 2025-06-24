@@ -1,5 +1,7 @@
-langchain==0.0.310
-sentence-transformers
+langchain
+langchain-community
+langchain-text-splitters
+sentence_transformers
 torch
 sentencepiece
 transformers
