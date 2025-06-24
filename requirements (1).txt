@@ -1,4 +1,5 @@
 langchain
+langchain-community
 sentence_transformers
 torch
 sentencepiece
