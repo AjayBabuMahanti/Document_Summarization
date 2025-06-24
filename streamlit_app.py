@@ -120,7 +120,7 @@ def main():
                 temp_file.write(uploaded_file.read())
       with col1:
         st.info('Original Text')
-        pdf_viewer = displayPDF(filepath)
+        pdf_viewer = display_pdf(filepath)
       with col2:
         st.info('Summarization is below')
         summary = llm_pipeline(filepath)
