@@ -116,13 +116,16 @@ def main():
     if st.button('Summarize'):
       col1, col2 = st.columns(2)
       filepath = "data/"+uploaded_file.name
-      with open(filepath, 'wb) as temp_file:
+      with open(filepath, 'wb') as temp_file:
                 temp_file.write(uploaded_file.read())
       with col1:
         st.info('Original Text')
         pdf_viewer = displayPDF(filepath)
       with col2:
         st.info('Summarization is below')
+
+         summary = llm_pipeline(filepath)
+         st.success(summary)
 
 if __name__=='__main__':
   main()
