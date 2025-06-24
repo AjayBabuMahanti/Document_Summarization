@@ -1,0 +1,9 @@
+streamlit
+transformers
+keybert
+sentence-transformers
+PyMuPDF
+python-docx
+pdf2image
+pytesseract
+pyyaml
